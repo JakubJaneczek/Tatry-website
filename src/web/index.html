@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head>
+        <title>Tatry</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="static/style.css">
+            <link rel="stylesheet" href="/resources/demos/style.css">
+            <script type="text/javascript" src="static/js/jsWai.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".button1").click(function(){
+                        $(".link").slideToggle();
+                    });
+                });
+            </script>       
+    </head>
+
+    <body style = "font-family: Arial, Helvetica, sans-serif;" onload="countdown();">
+        <div id="topic">
+            <h1>Tatry - najpiękniejsze miejsce na Ziemi</h1>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Poprawny CSS!" />
+                </a>
+            </p>
+        </div>
+
+        <div style="overflow:auto">
+            <div id="navigation">
+                <a href="index.html">Strona główna</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="formularz.html">Formularz</a>
+                <a href="Historia.html">Historia</a>
+                <a href="galeriaZbiorcza.php">Galeria wspólna</a>
+                <a href="register.php">Rejestracja</a>
+                <a href="login.php">Logowanie</a>
+                <a href="galeriaWybranych.php">Wybrane zdjęcia</a>
+              </div>
+
+            <div id="content">
+               
+               <div style="text-align: center;"><h2>Parę słów o mnie</h2></div>
+               <p>
+                Siemanko! Jestem Jakub, mam 19 lat i studiuję pierwszy rok informatyki na cudownej Politechnice Gdańskiej. Chciałbym przedstawić Wam chociaż w małym stopniu
+                moje ulubione miejsce na Ziemi, a mianowice Tatry, które przez wielu uznawane są za jedne z najpiękniejszych gór w Europie. Miłośc do górskich wędrówek zaszczepili we mnie rodzice, gdy mając trzy lata po
+                raz pierwszy zabrali mnie na wakacje w ten piękny rejon Polski. Oczywiście nieiwele wspomnień z tego pierwszego wypadu pozostało w mojej głowie, jednak pamiętam wciąż satysfakcję z pokonania pierwszej doliny, którą była droga na Halę Gąsienicową.
+                Tamtejsze piekne widoki na Tatry Wysokie mam przed oczami do dnia dzisiejszego. Przez ostatnie 16 lat praktycznie co roku robię co w mojej mocy by móc wyrwać się na parę dni w te piękne rejony, by móc pokonywac coraz to nowsze i trudniejsze szlaki. 
+                W tym rou udało mi się wraz z przyjacielem przejśc jedne z najtrudneisjzych tras w Tatrach polskich, jakimi są droga na Świnice przez Zawrat, oraz Orla Perć, z których to jendo ze zdjęć jest pokazne poniżej.<br>
+                
+                </p>
+                <div id="mojafota">
+                    <a target="_self" href="foty/mojafota.jpg">
+                       <img style="display: block; width: 20%; margin: 0 auto;" src="foty/mojafota.jpg"  alt="Moje zdjęcie na Zawracie">
+                    </a>
+                </div>
+                <br>
+                <div class="center">
+                    <div id="kupon">
+                        <button onclick="znizka()">Odbierz jednorazowy kupon zniżkowy na sprzęt górski!</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="aboutMe">
+                <p class="link"> <a href="http://www.topr.pl/" target="_blank"> Oficjalna strona TOPR</a></p>
+                <p class="link"><a href="https://mapa-turystyczna.pl/tatry#49.20131/19.94843/10" target="_blank">Moja ulubiona mapa Tatr</a></p>
+                <p class="link"> <a href="https://www.instagram.com/tatry_official/" target="_blank"> Najpiękniejsze zdjęcia prosto z Tatr</a></p>
+                <button class="button1">Pokaż/Schowaj linki</button>
+               </div>
+        </div>
+        <div id ="footer">
+            Jakub Janeczek - Politechnika Gdańska - Informatyka - Tatry
+            <div id="clock"></div>
+        </div>
+    </body>
+</html>   

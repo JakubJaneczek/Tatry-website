@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+#topic{
+  background-color:#e5e5e5;
+  text-align: center;
+  padding: 15px;
+}
+#navigation{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+#navigation a{
+  background-color: #e5e5e5;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
+#content{
+  float: left;
+  width: 60%;
+  padding: 20px;
+}
+#aboutMe{
+  float: left;
+  width: 20%;
+  padding: 10px;
+  margin-top: 5px;
+  text-align: center;
+  background-color:#e5e5e5; 
+  display: block;
+}
+@media only screen and (max-width: 620px) {
+  #navigation, #content, #aboutMe {
+   width: 100%;   
+  }
+}
+#footer{
+  background-color:#e5e5e5;
+  text-align:center;
+  padding:10px;
+  margin-top:7px;
+}
+#mojafota{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  
+}
+.gallery{
+  margin: 5px;
+  border: 1px solid;
+  width: auto;
+  float: left;
+}
+.gallery:hover{
+  border: 1px solid rgb(5, 5, 5);
+}
+.galleryGroup{
+  border: 5px solid;
+  width: 200px !important;
+  height: 125px !important;
+  float: left !important;
+  margin: 5px !important;
+}
+.gallery img{
+width: 100%;
+height: auto;
+}
+.description{
+  padding: 20px;
+  text-align: center;
+}
+.descriptionGroup{
+  padding: 20px;
+  text-align: center;
+  width: 100% !important;
+  float: left;
+}
+#table, th, td {
+  border:1px solid black;
+  color: black;
+}
+a:active {
+  color: red;
+}
+a {
+  text-decoration: none;
+}
+a:hover{
+  background-color: rgb(82, 75, 77);
+}
+button
+{
+display: inline-block;
+margin: 0 auto;
+}
+.center
+{
+  text-align: center;
+}
+#menu
+{
+  padding: 5px;
+  text-align: center;
+  background-color: bisque;
+  border: solid 1px #000000;
+}
+#slajd
+{
+  padding: 20px;
+  display: none;
+  text-align: center;
+  background-color: bisque;
+  border: solid 1px #000000;
+}
+html {
+  scroll-behavior: smooth;
+}
+.czcionka1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.czcionka2
+{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

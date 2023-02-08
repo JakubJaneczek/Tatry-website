@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tatry>
+    <o_mnie>
+        <imie>Jakub</imie>
+        <nazwisko>Janeczek</nazwisko>
+        <data_urodzenia>02.02.2002</data_urodzenia>
+    </o_mnie>
+    <historia>
+        <góry>
+            <tatry czesc="zachodnie">
+				<tatry_zachodnie>
+				    <tytul>Tatry Zachodnie</tytul>
+					    <opis>
+                            Zbudowane głównie ze skał osadowych, magmowych głębinowych i metamorficznych.
+					    </opis>
+				</tatry_zachodnie>
+            </tatry>
+            <tatry czesc="wschodnie">
+                <tatry_wysokie>
+					<tytul>Tatry wysokie</tytul>
+					    <opis>
+                            Utworzone przez tzw. trzon krystaliczny, który zbudowany jest w przeważającej mierze ze skał magmowych głębinowych i metamorficznych.
+					    </opis>
+                </tatry_wysokie>
+                <tatry_bielskie>
+					<tytul>Tatry bielskie</tytul>
+					    <opis>
+                            Zbudowane wyłącznie ze skał osadowych- wapienie, margle, dolomity.
+					    </opis>
+                </tatry_bielskie>
+            </tatry>    
+        </góry>
+        <zwierzeta>
+            <dinozaury>
+                <tytul>Dinozaury w Tatrach</tytul>
+                    <opis>
+                        W 1977 r. do dwóch geologów uśmiechnęło się szczęście. Wybrali się do Cichej Doliny w Tatrach aby pobrać próbki i udało się im odkryć coś, co żyło tu przed 200 milionami lat. Znaleźli niezbite dowody, że na tym terytorium poruszały się i żyły 2,5 metrowe dinozaury, a Tatry w tamtym okresie były wyspą.
+                    </opis>
+            </dinozaury>
+            <sarna_europejska>
+                <tytul>Sarna europejska</tytul>
+                    <opis>
+                        (Capreolus capreolus) – gatunek ssaka parzystokopytnego z rodziny jeleniowatych. Jedno z ważniejszych zwierząt łownych Europy. Samica jest potocznie nazywana kozą, samiec rogaczem lub kozłem, młode zaś koźlętami. Istnieje również łowieckie określenie sarniak na dorosłego samca sarny.
+                    </opis>
+            </sarna_europejska>
+            <lis_rudy>
+                <tytul>Sarna europejska</tytul>
+                    <opis>
+                        (Vulpes vulpes) – gatunek drapieżnego ssaka z rodziny psowatych (Canidae). Występuje na półkuli północnej, w części Azji, w Europie, Ameryce Północnej i północnej Afryce. W XIX wieku został wprowadzony do Australii, gdzie jest obecnie jednym z największych szkodników (gatunek inwazyjny).
+                    </opis>
+            </lis_rudy>
+            <niedzwiedz_brunatny>
+                <tytul>Niedzwiedz brunatny</tytul>
+                    <opis>
+                        (Ursus arctos) – gatunek drapieżnego ssaka z rodziny niedźwiedziowatych. Zamieszkuje Azję, Europę Północną i Amerykę Północną. Nie jest zagrożony wyginięciem.
+                    </opis>
+            </niedzwiedz_brunatny>
+            <orzel_przedni>
+                <tytul>Orzel przedni</tytul>
+                    <opis>
+                        (Aquila chrysaetos) – gatunek dużego ptaka szponiastego z rodziny jastrzębiowatych (Accipitridae), zamieszkujący północną Afrykę, Azję, Amerykę Północną oraz Europę.
+                    </opis>
+            </orzel_przedni>
+        </zwierzeta>
+    
+        <czlowiek>
+			<czlowiek1>
+                <tytul>Neandertalczyk z Ganoviec, pierwszy znany nam człowiek</tytul>
+                    <opis>
+                        Ten najstarszy znany mieszkaniec Ganoviec żył w pobliżu źródła termalnego przed około 120 tysiącami lat. Przypuszcza się, że utopił się odurzony gazami unikającymi ze źródła. Oryginalną wylaną część jego czaszki przechowuje Muzeum Narodowe w Pradze, kopię można zobaczyć w Muzeum Podtatrzańskim w Popradzie.
+                    </opis>
+		    </czlowiek1>
+        
+			<czlowiek>
+                <tytul>Odkrywcy Tatr</tytul>
+                    <opis>
+                        XVI wiek możemy uważać za odkrycie Tatr połączone z pierwszymi próbami wypraw turystycznych. Stała za nimi kobieta, kieżmarska pani mieszkająca na zamku Beata Łaska, która wyszła aż na Zielony Staw. Pierwsze wejście na szczyty tatrzańskie opisał matematyk i astronom David Froehlich, który prawdopodobnie wszedł na Kieżmarski Szczyt. Jego zapiski to wzruszająca historia trzydniowej wędrówki po karpackich szczytach. Na początku XVIII wieku w kraju tym panowała epidemia i bieda. Dzięki stopniowemu rozwojowi gospodarczemu Tatry zaczynały „budzić się” do życia, a wiek XIX jest typowym okresem rozwoju osad tatrzańskich. Przyśpieszyła to także budowa kolei koszycko – bohumińskiej.
+                    </opis>
+			</czlowiek>
+        </czlowiek>
+    </historia>
+    <galeria>
+        <zdjecie sciezka="foty/zdjecie1.jpg">Widok ze Świnicy</zdjecie>
+        <zdjecie sciezka="foty/zdjecie2.jpg">Dolina Mięguszowicka</zdjecie>
+        <zdjecie sciezka="foty/zdjecie9.jpg">Piękne kozice</zdjecie>
+    </galeria>
+    <informacje>
+        <linki>
+            <link sciezka="http://www.topr.pl/">Oficjalna strona TOPR</link>
+            <link sciezka="https://mapa-turystyczna.pl/tatry#49.20131/19.94843/10">Moja ulubiona mapa Tatr</link>
+            <link sciezka="https://www.instagram.com/tatry_official/">Najładniejsze zdjęcia z Tatr</link>
+        </linki>
+    </informacje>
+</Tatry>

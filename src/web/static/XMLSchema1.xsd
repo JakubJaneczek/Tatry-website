@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Tatry" >
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="o_mnie" type="about_meType"/>
+				<xs:element name="historia" type="historyType"/>
+				<xs:element name="galeria" type="galleryType"/>
+				<xs:element name="informacje" type="infoType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	
+	<xs:complexType name="about_meType">
+		<xs:sequence>
+			<xs:element name="imie">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="15"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="nazwisko">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="30"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="data_urodzenia">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:maxLength value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="historyType">
+		<xs:sequence>
+			<xs:element name="góry" type="góryType"/>
+			<xs:element name="zwierzeta" type="zwierzetaType"/>
+			<xs:element name="czlowiek" type="czlowiekType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name ="góryType">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" name="tatry" type="tatryType">
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tatryType">
+		<xs:sequence>
+			<xs:element minOccurs="0" name="tatry_wysokie" type="tatry_wysokieType"/>
+			<xs:element minOccurs="0" name="tatry_bielskie"  type="tatry_bielskieType"/>
+			<xs:element minOccurs="0" name="tatry_zachodnie"  type="tatry_zachodnieType"/>
+		</xs:sequence>
+		<xs:attribute name="czesc" type="xs:string" use="required" />
+	</xs:complexType>
+
+	<xs:complexType name="tatry_wysokieType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="tatry_bielskieType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="tatry_zachodnieType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="zwierzetaType">
+		<xs:sequence>
+			<xs:element name="dinozaury" type="dinozauryType"/>
+			<xs:element name="sarna_europejska" type="sarna_europejskaType"/>
+			<xs:element name="lis_rudy" type="lis_rudyType"/>
+			<xs:element name="niedzwiedz_brunatny" type="niedzwiedz_brunatnyType"/>
+			<xs:element name="orzel_przedni" type="dinozauryType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="dinozauryType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="sarna_europejskaType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="lis_rudyType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="niedzwiedz_brunatnyType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="orzel_przedniType">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="czlowiekType">
+		<xs:sequence>
+			<xs:element name="czlowiek1" type="czlowiek1Type"/>
+			<xs:element name="czlowiek" type="czlowiek2Type"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="czlowiek1Type">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="czlowiek2Type">
+		<xs:sequence>
+			<xs:element name="tytul" type="titleType" />
+			<xs:element name="opis" type="descriptionType"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name ="galleryType">
+		<xs:sequence>
+			<xs:element name="zdjecie" type="zdjecieType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="zdjecieType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="sciezka" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="infoType">
+		<xs:sequence>
+			<xs:element name="linki" type="linkiType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="linkiType">
+		<xs:sequence>
+			<xs:element name="link" type="linkType"  maxOccurs="unbounded"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="linkType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="sciezka" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:simpleType name="titleType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="descriptionType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+</xs:schema>

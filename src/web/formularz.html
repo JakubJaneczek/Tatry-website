@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+    <head><title>Formularz</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="static/style.css">
+        <link rel="stylesheet" href="static/jquery_ui.css">
+        <script type="text/javascript" src="static/js/jsWai.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".button1").click(function(){
+                    $(".link").slideToggle();
+                });
+            });
+        </script>  
+        <script>
+            $( function() {
+              $( "#datepicker" ).datepicker();
+            } );
+        </script>
+        <script>
+            $( function() {
+              $( "#dialog" ).dialog();
+            } );
+        </script>
+    </head>
+
+    <body style = "font-family: Arial, Helvetica, sans-serif;" onload="countdown();">
+        <div id="topic">
+            <h1>Tatry - najpiękniejsze miejsce na Ziemi</h1>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Poprawny CSS!" />
+                </a>
+            </p>
+        </div>
+
+        <div style="overflow:auto">
+            <div id="navigation">
+                <a href="index.html">Strona główna</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="formularz.html">Formularz</a>
+                <a href="Historia.html">Historia</a>
+                <a href="galeriaZbiorcza.php">Galeria wspólna</a>
+                <a href="register.php">Rejestracja</a>
+                <a href="login.php">Logowanie</a>
+                <a href="galeriaWybranych.php">Wybrane zdjęcia</a>
+              </div>
+
+            <div id="content" style="float: left;">
+                <div id="dialog" title="Mała ankieta od autora">
+                    <p>Dla Ciebie to minutka, a mi się bardzo przyda :)</p>
+                </div>
+              <form>
+                  <label >Imię:</label><br>
+                  <input type="text" name="imie"><br> 
+                  <label >Nazwisko:</label><br>
+                  <input type="text" name="nazwisko" ><br> 
+                  <label >Data urodzenia:</label><br>
+                  <input type="text" name="wiek" id="datepicker"><br> 
+                  <p>Czy byłeś/aś kiedyś w górach?</p>
+                  <input type="radio" name="pytanie1">
+                  <label >Tak</label>
+                  <input type="radio" name="pytanie1">
+                  <label >Nie</label><br>
+                  <p>Ulubione miejsce w Tatrach? (można wybrać więcej niz jedną odpowiedź)</p>
+                  <input type="checkbox" name="pytanie2">
+                  <label >Szczyty</label><br>
+                  <input type="checkbox" name="pytanie2">
+                  <label >Doliny</label><br>
+                  <input type="checkbox" name="pytanie2">
+                  <label >Schroniska</label><br>
+                  <input type="checkbox" name="pytanie2">
+                  <label >Nie chodzę po górach</label><br>
+                  <p>Ulubiony środek transportu z miejsca zamieszkania na szlak?</p>
+                  <select name="wybor">
+                    <option>Samochód</option>
+                    <option>Bus</option>
+                    <option>Na piechotę</option>
+                    </select>
+                    <p>Dodaj coś od siebie :)</p>
+                    <textarea name="user"></textarea><br><br>
+                    <input type="submit" value="Wyślij" />
+                    <input type="reset" value="Wyczyść formularz" />                       
+              </form>
+            </div>
+
+            <div id="aboutMe">
+                <p class="link"> <a href="http://www.topr.pl/" target="_blank"> Oficjalna strona TOPR</a></p>
+                <p class="link"><a href="https://mapa-turystyczna.pl/tatry#49.20131/19.94843/10" target="_blank">Moja ulubiona mapa Tatr</a></p>
+                <p class="link"> <a href="https://www.instagram.com/tatry_official/" target="_blank"> Najpiękniejsze zdjęcia prosto z Tatr</a></p>
+                <button class="button1">Pokaż/Schowaj linki</button>
+            </div>
+        </div>
+        <div id ="footer">
+            Jakub Janeczek - Politechnika Gdańska - Informatyka - Tatry
+            <div id="clock"></div>
+        </div>
+    </body>
+</html> 
+          
